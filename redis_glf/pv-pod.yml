@@ -1,0 +1,78 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: nfs-pv1
+spec:
+    capacity:
+        storage: 5Gi
+    accessModes:
+        - ReadWriteMany
+    nfs:
+        server: 192.168.16.165
+        path: "/opt/nfs/pv1"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: nfs-pv2
+spec:
+    capacity:
+        storage: 5Gi
+    accessModes:
+        - ReadWriteMany
+    nfs:
+        server: 192.168.16.165
+        path: "/opt/nfs/pv2"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: nfs-pv3
+spec:
+    capacity:
+        storage: 5Gi
+    accessModes:
+        - ReadWriteMany
+    nfs:
+        server: 192.168.16.165
+        path: "/opt/nfs/pv3"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: nfs-pv4
+spec:
+    capacity:
+        storage: 5Gi
+    accessModes:
+        - ReadWriteMany
+    nfs:
+        server: 192.168.16.165
+        path: "/opt/nfs/pv4"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: nfs-pv5
+spec:
+    capacity:
+        storage: 5Gi
+    accessModes:
+        - ReadWriteMany
+    nfs:
+        server: 192.168.16.165
+        path: "/opt/nfs/pv5"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: nfs-pv6
+spec:
+    capacity:
+        storage: 5Gi
+    accessModes:
+        - ReadWriteMany
+    nfs:
+        server: 192.168.16.165
+        path: "/opt/nfs/pv6"
+---
